@@ -1,0 +1,9 @@
+<div>
+    <h1>Groups</h1>
+    <div ng-repeat="group in groups">
+        <h3>{{group.name}}</h3>
+        <div ng-repeat="team in group.teams">
+            <label>{{team.name}}</label>
+        </div>
+    </div>
+</div>
