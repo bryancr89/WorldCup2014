@@ -1,0 +1,6 @@
+<ul ng-controller="TeamCtrl" ng-init="all()">
+    <li ng-repeat="team in teams | orderBy:'name'">
+        <img src="/teams/assets/img/{{team.img}}">
+        <a ng-href="#!/teams/{{team.id}}">{{team.name}}</a>
+    </li>
+</ul>
