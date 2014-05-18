@@ -16,7 +16,7 @@ module.exports = function(Articles, app, auth) {
         .get(articles.all)
         .post(auth.requiresLogin, articles.create);
     app.route('/articles/:articleId')
-        .get(articles.show)
+            .get(articles.show)
         .put(auth.requiresLogin, hasAuthorization, articles.update)
         .delete(auth.requiresLogin, hasAuthorization, articles.destroy);
 
